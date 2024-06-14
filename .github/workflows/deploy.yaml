@@ -14,6 +14,12 @@ jobs:
     name: Build & Deploy
     steps:
       - uses: actions/checkout@v4
+      - name: Install Yarn
+        run: |
+          # 安装 yarn，这里使用 curl 命令来安装
+          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+          echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+          sudo apt-get update && sudo apt-get install yarn
       - name: Publish
         uses: cloudflare/wrangler-action@v3
         with:
