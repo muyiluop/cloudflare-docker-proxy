@@ -8,9 +8,6 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "docker.proxy.7n3.top": dockerHub,
-
-  // staging
-  "docker.proxy.7n3.top": dockerHub,
 };
 
 function routeByHosts(host) {
