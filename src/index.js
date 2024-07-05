@@ -5,9 +5,16 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 
+// const routes = {
+//   // production
+//   "docker.proxy.7n3.top": dockerHub,
+// };
 const routes = {
-  // production
-  "docker.proxy.7n3.top": dockerHub,
+  "docker.proxy.7n3.top": "https://registry-1.docker.io",
+  "quay.proxy.7n3.top": "https://quay.io",
+  "gcr.proxy.7n3.top": "https://k8s.gcr.io",
+  "k8s-gcr.proxy.7n3.top": "https://k8s.gcr.io",
+  "ghcr.proxy.7n3.top": "https://ghcr.io",
 };
 
 function routeByHosts(host) {
