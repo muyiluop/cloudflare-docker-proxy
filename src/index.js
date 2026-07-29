@@ -10,11 +10,11 @@ const dockerHub = "https://registry-1.docker.io";
 //   "docker.proxy.7n3.top": dockerHub,
 // };
 const routes = {
-  "docker.proxy.7n3.top": "https://registry-1.docker.io",
-  "quay.proxy.7n3.top": "https://quay.io",
-  "gcr.proxy.7n3.top": "https://k8s.gcr.io",
-  "k8s-gcr.proxy.7n3.top": "https://k8s.gcr.io",
-  "ghcr.proxy.7n3.top": "https://ghcr.io",
+  "docker.mirror.7n3.top": "https://registry-1.docker.io",
+  "quay.mirror.7n3.top": "https://quay.io",
+  "gcr.mirror.7n3.top": "https://k8s.gcr.io",
+  "k8s.mirror.7n3.top": "https://k8s.gcr.io",
+  "ghcr.mirror.7n3.top": "https://ghcr.io",
 };
 
 function routeByHosts(host) {
